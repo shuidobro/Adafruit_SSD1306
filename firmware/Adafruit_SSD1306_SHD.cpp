@@ -121,7 +121,7 @@ void Adafruit_SSD1306_SHD::drawPixel(int16_t x, int16_t y, uint16_t color) {
 }
 
 // constructor for software SPI - we indicate DataCommand, ChipSelect, Reset
-Adafruit_SSD1306_SHD::Adafruit_SSD1306(int8_t SID, int8_t SCLK, int8_t DC, int8_t RST, int8_t CS) : Adafruit_GFX(SSD1306_LCDWIDTH, SSD1306_LCDHEIGHT) {
+Adafruit_SSD1306_SHD::Adafruit_SSD1306_SHD(int8_t SID, int8_t SCLK, int8_t DC, int8_t RST, int8_t CS) : Adafruit_GFX(SSD1306_LCDWIDTH, SSD1306_LCDHEIGHT) {
     cs = CS;
     rst = RST;
     dc = DC;
@@ -131,7 +131,7 @@ Adafruit_SSD1306_SHD::Adafruit_SSD1306(int8_t SID, int8_t SCLK, int8_t DC, int8_
 }
 
 // constructor for hardware SPI - we indicate DataCommand, ChipSelect, Reset
-Adafruit_SSD1306_SHD::Adafruit_SSD1306(int8_t DC, int8_t RST, int8_t CS) : Adafruit_GFX(SSD1306_LCDWIDTH, SSD1306_LCDHEIGHT) {
+Adafruit_SSD1306_SHD::Adafruit_SSD1306_SHD(int8_t DC, int8_t RST, int8_t CS) : Adafruit_GFX(SSD1306_LCDWIDTH, SSD1306_LCDHEIGHT) {
     dc = DC;
     rst = RST;
     cs = CS;
@@ -139,7 +139,7 @@ Adafruit_SSD1306_SHD::Adafruit_SSD1306(int8_t DC, int8_t RST, int8_t CS) : Adafr
 }
 
 // initializer for I2C - we only indicate the reset pin!
-Adafruit_SSD1306_SHD::Adafruit_SSD1306(int8_t reset) :
+Adafruit_SSD1306_SHD::Adafruit_SSD1306_SHD(int8_t reset) :
 Adafruit_GFX(SSD1306_LCDWIDTH, SSD1306_LCDHEIGHT) {
     sclk = dc = cs = sid = -1;
     rst = reset;
