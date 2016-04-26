@@ -19,10 +19,10 @@ All text above, and the splash screen must be included in any redistribution
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include <Adafruit_SSD1306_SHD.h>
 
 #define OLED_RESET 4
-Adafruit_SSD1306 display(OLED_RESET);
+Adafruit_SSD1306_SHD display(OLED_RESET);
 
 #define NUMFLAKES 10
 #define XPOS 0
@@ -51,7 +51,7 @@ static const unsigned char PROGMEM logo16_glcd_bmp[] =
   B00000000, B00110000 };
 
 #if (SSD1306_LCDHEIGHT != 64)
-#error("Height incorrect, please fix Adafruit_SSD1306.h!");
+#error("Height incorrect, please fix Adafruit_SSD1306_SHD.h!");
 #endif
 
 void setup()   {                
