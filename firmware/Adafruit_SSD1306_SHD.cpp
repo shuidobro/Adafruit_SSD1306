@@ -16,7 +16,7 @@
  All text above, and the splash screen below must be included in any redistribution
  *********************************************************************/
 
-#include "Adafruit_GFX.h"
+#include "Adafruit_GFX/Adafruit_GFX.h
 #include "Adafruit_SSD1306_SHD.h"
 
 // the memory buffer for the LCD

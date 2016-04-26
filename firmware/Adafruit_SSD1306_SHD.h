@@ -18,7 +18,7 @@
 
 
 #include "application.h"
-#include "Adafruit_GFX.h"
+#include "Adafruit_GFX/Adafruit_GFX.h"
 
 
 #define BLACK 0
