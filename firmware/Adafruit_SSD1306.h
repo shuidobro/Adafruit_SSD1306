@@ -106,7 +106,7 @@
 #define SSD1306_VERTICAL_AND_RIGHT_HORIZONTAL_SCROLL 0x29
 #define SSD1306_VERTICAL_AND_LEFT_HORIZONTAL_SCROLL 0x2A
 
-class Adafruit_SSD1306 : public Adafruit_GFX {
+class Adafruit_SSD1306_SHD : public Adafruit_GFX {
 public:
     Adafruit_SSD1306(int8_t SID, int8_t SCLK, int8_t DC, int8_t RST, int8_t CS);
     Adafruit_SSD1306(int8_t DC, int8_t RST, int8_t CS);
